@@ -18,4 +18,4 @@ class DogViewSet(viewsets.ModelViewSet):
     # 그 외에 들어오는 column에 대해서는 무시.
     # 모든 column : '__all__'
     filter_backends = (DjangoFilterBackend,)
-    filter_fields = ('dogName', 'dogInfo')
+    filter_fields = ('dogName',)
